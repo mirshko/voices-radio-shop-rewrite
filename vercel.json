@@ -2,8 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "https://voices.squarespace.com/:path*"
+      "source": "/",
+      "destination": "https://voices.squarespace.com/"
+    },
+    {
+      "source": "/:match*",
+      "destination": "https://voices.squarespace.com/:match*"
     }
   ]
 }
